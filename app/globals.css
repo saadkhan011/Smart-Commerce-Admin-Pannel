@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* @media (max-width: 628px) {
+  .order-table-dashoboard-home {
+    width: 410px;
+  }
+
+  .order-table-dashoboard-Buyer {
+    width: 410px;
+  }
+
+  .order-table-dashoboard-supplier {
+    width: 410px;
+  }
+
+  .order-table-dashoboard-product {
+    width: 410px;
+  }
+
+  .order-table-dashoboard-order {
+    width: 410px;
+  }
+} */
+
+.scrollable-menu {
+  max-height: 400px; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+.sidebar {
+  min-height: 93vh;
+}
+/* antd css  */
+ :where(.css-dev-only-do-not-override-d2lrxs).ant-radio-wrapper
+  .ant-radio-checked
+  .ant-radio-inner {
+  border-color: #6C53FD !important;
+  background-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-switch.ant-switch-checked {
+  background: #00d049 !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-default:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  color: #5a46cf !important;
+  border-color: #5a46cf !important;
+  background: #ffffff !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-dashed:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  color: #5a46cf !important;
+  border-color: #5a46cf !important;
+  background: #ffffff !important;
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-outlined:focus,
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-outlined:focus-within {
+  border-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-outlined:hover {
+  border-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-range
+  .ant-picker-active-bar {
+  background: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-input-outlined:focus,
+:where(.css-dev-only-do-not-override-d2lrxs).ant-input-outlined:focus-within {
+  border-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-input-outlined:hover {
+  border-color: #5a46cf !important;
+} 
+
+.select-hover .ant-select-selector {
+  border: 1px solid rgb(199, 199, 199) !important; 
+  border-radius: 4px !important; 
+}
+
+.select-hover:hover .ant-select-selector {
+  border: 1px solid #5a46cf !important; 
+  border-radius: 4px !important; 
+}
+
+.select-hover:focus .ant-select-selector {
+  border: 1px solid #5a46cf !important; 
+  border-radius: 4px !important; 
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-pagination
+  .ant-pagination-item-active
+  a {
+  color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-pagination
+  .ant-pagination-item-active {
+  border-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-input-number-outlined:hover {
+  border-color: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-primary {
+  background: #5a46cf !important;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-btn-primary:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  background: #ff454e !important;
+} 
+
+/* input:focus{
+  border: 1px solid #5a46cf !important;
+}
+input:hover{
+  border: 1px solid #5a46cf !important;
+}
+
+option:hover {
+  background-color: #5a46cf !important;
+} */
+:where(.css-dev-only-do-not-override-d2lrxs).ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #5a46cf;
+  border-color: #5a46cf;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-checkbox-checked .ant-checkbox-inner:hover {
+  background-color: #5a46cf;
+  border-color: #5a46cf;
+}
+.ant-spin-dot-item {
+  background-color: #5a46cf !important;
+}
