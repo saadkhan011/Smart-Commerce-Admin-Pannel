@@ -113,7 +113,7 @@ const ProductTable = () => {
       ...record,
       category: record.category?._id, // Set category to its ID
       subcategory: record.subcategory, // Directly set the subcategory value as it's already an ID
-      supplier: record.supplierId?.name, // Set supplier name
+      supplier: record.supplierId?._id, // Set supplier name
       features: features.map((feature) => ({
         title: feature.title,
         description: feature.description,
@@ -268,16 +268,19 @@ const ProductTable = () => {
       if (imageFile) {
         formData.append("image", imageFile);
       }
+      console.log("fs",imageFile)
+      console.log("form", formData)
 
       const isEdit = editingRecord?._id;
       let url = "products";
       let queryKey = "Products";
 
       if (isEdit) {
+        formData.append("id", isEdit);
         url = `products/${isEdit}`;
         updateMutation.mutate(
           {
-            data: { ...values, id: isEdit },
+            data: formData,
             url,
             queryKey,
           },
