@@ -348,7 +348,7 @@ const SuppliersTable = () => {
       const response = await fetch(
         `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
           address
-        )}&key=AIzaSyCOA0COnTT_LPm4U7nEWMFIP-vrHGX7wzw`
+        )}&key=${key_of_google}`
       );
       const data = await response.json();
       if (data.results && data.results[0]) {
@@ -579,7 +579,7 @@ const SuppliersTable = () => {
           {/* Map displaying location */}
           <div className="mb-5">
             <LoadScript
-              googleMapsApiKey="AIzaSyBFZW8emYS3DQLTWsd0IIFw6TM87CKD4pA"
+              googleMapsApiKey="AIzaSyAezXyrlQ8OxN7Y7fneGjPLBMxNOj3IM5g"
               libraries={["places"]}
             >
               <GoogleMap

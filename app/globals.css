@@ -137,7 +137,7 @@ body {
 :where(.css-dev-only-do-not-override-d2lrxs).ant-btn-primary:not(:disabled):not(
     .ant-btn-disabled
   ):hover {
-  background: #ff454e !important;
+  background: #5a46cf !important;
 } 
 
 /* input:focus{

@@ -5,7 +5,7 @@ const Cards = ({ cards }) => {
   const icons = {
     'Total Sales': <FaMoneyBillWave className="text-[#F0364D]" size={35} />,
     'Total Orders': <FaShoppingBag className="text-yellow-500" size={35} />,
-    'Total Buyers': <FaUtensils className="text-green-500" size={35} />,
+    'Total Buyer': <FaMoneyBillWave className="text-green-500" size={35} />,
     'Total Suppliers': <FaTruck className="text-purple-500" size={35} />,
     'Total Earning': <FaDollarSign className="text-blue-500" size={35} />,
   };

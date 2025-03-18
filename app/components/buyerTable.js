@@ -561,7 +561,7 @@ const BuyerTable = () => {
           {/* Map displaying location */}
           <div className="mb-5">
             <LoadScript
-              googleMapsApiKey="AIzaSyCOA0COnTT_LPm4U7nEWMFIP-vrHGX7wzw"
+              googleMapsApiKey=""
               libraries={["places"]}
             >
               <GoogleMap
