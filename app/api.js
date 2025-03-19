@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// export const API_BASE_URL = "https://smart-commerce-backend.vercel.app/api";
-export const API_BASE_URL = "http://localhost:5000/api";
+export const API_BASE_URL = "https://smart-commerce-backend.vercel.app/api";
+// export const API_BASE_URL = "http://localhost:5000/api";
 // Function to create a role
 export const createRequest = (data, url, token) => {
   return axios.post(`${API_BASE_URL}/${url}`, data, {
